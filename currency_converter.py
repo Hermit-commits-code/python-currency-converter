@@ -14,8 +14,9 @@ class CurrencyConverterApp(tk.Tk):
         self.resizable(width=0, height=0)
 
     def build_gui(self):
-        self.logo = tk.PhotoImage(file="logo.png")
+        self.logo = tk.PhotoImage(file="images/logo.png")
         tk.Label(self, image=self.logo).pack()
+        self.build_gui()
 
 
 if __name__ == "__main__":
